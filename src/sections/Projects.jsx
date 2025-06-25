@@ -19,11 +19,8 @@ const Projects = () => {
 
   return (
     <section id="work" className="c-space my-20">
-      <p className="head-text pb-5">My Work</p>
-      <div className="flex items-center justify-center border-2 border-white-500 rounded-xl h-[20vh]"  >
-        <p className="text-violet-300 text-lg md:text-2xl font-semibold  " >As Soon as i deploy my projects i will update this section....!</p>
-      </div>
-      {/* <p className="head-text">My Work</p>
+      <p className="head-text ">My Work</p>
+      
       <div className="grid lg:grid-col-2 grid-cols-1 gap-5 mt-12 w-full ">
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
           <div className="absolute top-0 right-0">
@@ -52,15 +49,15 @@ const Projects = () => {
           </div>
           <div className="flex items-center justify-between gap-5 flex-wrap">
             <div className="flex items-center gap-3">
-              {currentProject.tags.map((tags, index) => (
-                <img
-                  key={index}
-                  src={tags.path}
-                  alt={tags.name}
-                  className="w-10 h-10"
-                />
-              ))}
-              <div className="relative sm:left-28 md:left-64 lg:left-[590px] xl:left-[770px] 2xl:left-[1000px]">
+              {currentProject.tags.map((tag, index) => {
+                const IconComponent = tag.icon;
+                return (
+                  <span key={index} className="w-10 h-10 flex items-center justify-center">
+                    <IconComponent size={40} color="#61dafb" />
+                  </span>
+                );
+              })}
+              <div className="relative left-14 sm:left-24 md:left-[170px] lg:left-[400px] xl:left-[700px] 2xl:left-[900px]">
                 <a
                   href={currentProject.href}
                   target="_blank"
@@ -101,7 +98,7 @@ const Projects = () => {
             </button>
           </div>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 };
