@@ -1,77 +1,101 @@
+import React from "react";
+
 const Skills = () => {
   return (
-    <section className="c-space my-20 px-14 ">
-      <p className="head-text">Expertise</p>
+    <div>
+      <p className="text-white-800 text-2xl font-bold">My Skills</p>
       <br />
-      <div className="flex justify-center items-center md:items-center flex-col  relative rounded-xl border-double border border-white-500  ">
-        <div className="py-2 my-5 grid grid-cols-2  grid-flow-row gap-5 lg:grid-cols-6  md:grid md:grid-cols-4 xl:flex xl:flex-row  flex-col  items-center space-y-5 md:space-x-5 ">
-          <div className="flex flex-col items-center justify-center relative top-[10px]  md:top-[10px] md:left-4 lg:top-2">
-            <img
-              src="/assets/javascript.png"
-              alt="javascript-skill"
-              className="w-20 h-auto md:w-[105px] lg:w-24 xl:w-24 2xl:w-24 scale-animation pb-2 "
-            />
-            <p className="skill-name">JavaScript</p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img
-              src="/assets/css.png"
-              alt="Css-skill"
-              className="w-[85px] h-auto md:w-[115px] lg:w-[110px] xl:w-[109px] 2xl:w-[110px] scale-animation pb-2 "
-            />
-            <p className="skill-name" >Css</p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img
-              src="/assets/html.png"
-              alt="html-skill"
-              className="w-[69px] h-auto md:w-[90px] lg:w-20 xl:w-[87px] 2xl:w-[90px] scale-animation pb-2  "
-            />
-            <p className="skill-name">Html</p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img
-              src="/assets/tailwind.png"
-              alt="Tailwind-skill"
-              className="w-16 h-auto md:w-24 lg:w-28 xl:w-28 2xl:w-28 scale-animation pb-2 "
-            />
-            <p className="skill-name">Tailwind Css</p>
-          </div>
-          <div className="flex flex-col items-center justify-center ">
-            <img
-              src="/assets/reactpng.png"
-              alt="react-skill"
-              className="w-16 h-auto md:w-24 lg:w-28 xl:w-28 2xl:w-28 scale-animation pb-2 "
-            />
-            <p className="skill-name">React JS</p>
-          </div>
-          <div className="flex flex-col items-center justify-center ">
-            <img
-              src="/assets/threejs1.png"
-              alt="threejs-skill"
-              className="w-16 h-auto rounded-xl md:w-24 lg:w-28 xl:w-28 2xl:w-28 scale-animation pb-2 "
-            />
-            <p className="skill-name">Three JS</p>
-          </div>
-          <div className="flex flex-col items-center justify-center ">
-            <img
-              src="/assets/vscode.png"
-              alt="vs-code"
-              className="w-16 h-auto md:w-24 lg:w-28 xl:w-28 2xl:w-28 scale-animation pb-2 "
-            />
-            <p className="skill-name">Vs Code</p>
-          </div>
-          <div className="flex flex-col items-center justify-center ">
-            <img
-              src="/assets/github.png"
-              alt="github"
-              className="w-20 h-auto md:w-24 lg:w-28 xl:w-28 2xl:w-28 scale-animation pb-2  "
-            />
-            <p className="skill-name">GitHub</p>
+      <div className="ring-2 ring-white-800 w-[1920px] h-auto bg-black-100 rounded-lg">
+        <div className="flex flex-row  px-32 py-10 justify-center items-center ">
+          <div className="grid grid-cols-4 gap-32">
+            <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-black-600  rounded-lg transition-all duration-300">
+              <img
+                src="public\assets\reactpng.png"
+                alt="react"
+                className="size-32 group-hover:scale-110 transition-transform duration-300"
+              />
+              <p className="text-white-800 text-2xl font-bold">React</p>
+            </div>
+            <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-black-600 rounded-lg transition-all duration-300">
+              <img
+                src="public\assets\tailwind.png"
+                alt="tailwind"
+                className="size-32 group-hover:scale-110 transition-transform duration-300"
+              />
+              <p className="text-white-800 text-2xl font-bold">Tailwind</p>
+            </div>
+            <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-black-600 rounded-lg transition-all duration-300">
+              <img
+                src="public\assets\nodejs.png"
+                alt="nodejs"
+                className="size-32 group-hover:scale-110 transition-transform duration-300"
+              />
+              <p className="text-white-800 text-2xl font-bold">Node.js</p>
+            </div>
+            <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-black-600 rounded-lg transition-all duration-300">
+              <img
+                src="public\assets\mongodb.png"
+                alt="mongodb"
+                className="size-32 group-hover:scale-110 transition-transform duration-300"
+              />
+              <p className="text-white-800 text-2xl font-bold">MongoDB</p>
+            </div>
+            <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-black-600 rounded-lg transition-all duration-300">
+              <img
+                src="public\assets\expressJs.png"
+                alt="express"
+                className="size-32 group-hover:scale-110 transition-transform duration-300"
+              />
+              <p className="text-white-800 text-2xl font-bold">Express</p>
+            </div>
+            <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-black-600 rounded-lg transition-all duration-300">
+              <img
+                src="public\assets\html.png"
+                alt="html"
+                className="size-32 group-hover:scale-110 transition-transform duration-300"
+              />
+              <p className="text-white-800 text-2xl font-bold">HTML</p>
+            </div>
+            <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-black-600 rounded-lg transition-all duration-300">
+              <img
+                src="public\assets\javascript.png"
+                alt="javascript"
+                className="size-32 group-hover:scale-110 transition-transform duration-300"
+              />
+              <p className="text-white-800 text-2xl font-bold">JavaScript</p>
+            </div>
+            <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-black-600 rounded-lg transition-all duration-300">
+              <img src="public\assets\css.png" alt="css" className="size-32 group-hover:scale-110 transition-transform duration-300" />
+              <p className="text-white-800 text-2xl font-bold">CSS</p>
+            </div>
+            <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-black-600 rounded-lg transition-all duration-300">
+              <img
+                src="public\assets\github.png"
+                alt="git"
+                className="size-32 group-hover:scale-110 transition-transform duration-300"
+              />
+              <p className="text-white-800 text-2xl font-bold">Git Hub</p>
+            </div>
+            <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-black-600 rounded-lg transition-all duration-300">
+              <img
+                src="public\assets\vscode.png"
+                alt="git"
+                className="size-32 group-hover:scale-110 transition-transform duration-300"
+              />
+              <p className="text-white-800 text-2xl font-bold">VS Code</p>
+            </div>
+            <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-black-600 rounded-lg transition-all duration-300">
+              <img
+                src="public\assets\threejs1.png"
+                alt="git"
+                className="size-32 rounded-2xl group-hover:scale-110 transition-transform duration-300"
+              />
+              <p className="text-white-800 text-2xl font-bold">Three js</p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
