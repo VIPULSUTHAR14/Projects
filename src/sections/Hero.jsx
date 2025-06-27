@@ -1,18 +1,7 @@
 import React, { Suspense } from "react";
-import { Canvas, ReactThreeFiber } from "@react-three/fiber";
-import HackerRoom from "../componenets/HackerRoom";
-import CanvasLoader from "../componenets/CanvasLoader";
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constants/index.js";
-import Target from "../componenets/Target.jsx";
-import Reactlogo from "../componenets/Reactlogo.jsx";
-import JavascriptLogo from "../componenets/JavascriptLogo.jsx";
-import Css_Logo from "../componenets/Css_Logo.jsx";
-import Html_Logo from "../componenets/Html_Logo.jsx";
 import Button from "../componenets/Botton.jsx";
-import Gaming_setup from "../componenets/Gaming_setup.jsx";
-// import { Leva, useControls } from 'leva';
-import Gaming_desk from "../componenets/Gaming_desk.jsx";
 
 
 const Hero = () => {
@@ -27,38 +16,26 @@ const Hero = () => {
   const sizes = calculateSizes(isSmall, isMobile, istablet);
   return (
     <section id="about" className="min-h-screen h-full w-full flex flex-row relative">
+      <div className="flex flex-col md:flex-row items-center" >
       <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
         <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
-          Hi,I am Vipul <span className="waving-hand">🤚🏻</span>
+        Hello, I’m Vipul Suthar.
         </p>
         <p className="hero_tag text-gray_gradient">I am a Web Developer</p>
-      </div>
-      <div className="w-full h-full absolute inset-0 ">
-        <Canvas className="w-full h-full ">
-          <Suspense fallback={<CanvasLoader />}>
-            <perspectiveCamera makeDefault position={[0, 0, 20]} />
-
-            <Gaming_desk
-              
-              scale={sizes.deskScale}
-              position={sizes.deskPosition}
-              rotation={[-1.35 , 0 , 0]}
-            />
-
-            <group>
-              <Html_Logo position={sizes.HtmlPosition} scale={0.015}  />
-              <Css_Logo position={sizes.CssPosition} scale={0.015} />
-              <Reactlogo position={sizes.reactLogoPosition} />
-              <JavascriptLogo position={sizes.JavascriptLogoPosition}  />
-            </group>  
-
-            <ambientLight intensity={2} />
-            <directionalLight position={[0.24, 3.14, 0.60]} intensity={1}  />
-            <directionalLight position={[0.24, 3.14, 0.60]} intensity={1}  />
-
-          </Suspense>
-        </Canvas>
+        
+        <div className="flex flex-row gap-2 justify-center items-center">
+          <a href="https://github.com/VIPULSUTHAR14" target="_blank" >
+          <img src="public\assets\github.png" alt="github" className="size-16 grayscale hover:grayscale-0 hover:scale-110 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)] " />
+          </a>
+          <a href="https://www.linkedin.com/in/vipul-suthar-172028333/" target="_blank" >
+          <img src="public\assets\Linked-in.png" alt="Linked-in" className="size-12 grayscale hover:grayscale-0 hover:scale-110 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(0,119,181,0.6)] " />
+          </a>
         </div>
+      </div>
+      <span>
+        <img src="public\assets\avtar2.png" alt="avtar" className=" p-24 rounded-full grayscale hover:grayscale-0 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(0,119,181,0.6)]  " />
+      </span>
+      </div>
         br
         <div className="absolute bottom-[-65px] left-0 right-0 w-full z-10 c-space">
           <a href="#contact" className="w-fit" >

@@ -25,9 +25,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi I'm Vipul</p>
               <p className="grid-subtext">
-                I am actively learning and enhancing my skills in the field of
-                web development, with a current focus on creating 3D animated
-                websites.
+              I’m continuously improving my web development skills, with experience in creating responsive web pages using Next.js, React.js, Tailwind CSS, and Socket.io.
               </p>
             </div>
           </div>
@@ -42,8 +40,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I specialize in JavaScript and Three.js, with a strong focus on
-                the React ecosystem.
+              I specialize in JavaScript development, with expertise in React, Next.js, Node.js, Express, Mongoose, Tailwind CSS, Three.js, React Three Fiber and Socket.io.
               </p>
             </div>
           </div>
