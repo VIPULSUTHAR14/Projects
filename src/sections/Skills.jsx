@@ -2,31 +2,31 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div>
+    <div className="w-[100vw] flex flex-col items-center justify-center">
       <p className="text-white-800 text-2xl font-bold">My Skills</p>
       <br />
-      <div className="ring-2 ring-white-800 w-[1920px] h-auto bg-black-100 rounded-lg">
+      <div className="ring-2 ring-white-800  bg-black-100 rounded-lg">
         <div className="flex flex-row  px-32 py-10 justify-center items-center ">
           <div className="grid grid-cols-4 gap-32">
-            <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-black-600  rounded-lg transition-all duration-300">
+            <div className="group flex flex-col items-center justify-center p-4 gap-4 drop-shadow-blue-900 hover:bg-gradient-to-t from-cyan-900 to-black-200 rounded-lg transition-all duration-300">
               <img
                 src="/assets/reactpng.png"
                 alt="react"
                 className="size-32 group-hover:scale-110 transition-transform duration-300"
               />
-              <p className="text-white-800 text-2xl font-bold">React</p>
+              <p className="text-white-800 text-2xl font-bold group-hover:underline group-hover:text-black-200 transition-all duration-300">React</p>
             </div>
-            <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-black-600 rounded-lg transition-all duration-300">
+            <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-gradient-to-t from-cyan-300 to-violet-600 rounded-lg transition-all duration-300">
               <img
                 src="/assets/tailwind.png"
                 alt="tailwind"
-                className="size-32 group-hover:scale-110 transition-transform duration-300"
+                className="size-32 group-hover:scale-110 transition-transform duration-300 group-hover:drop-shadow-blue-900"
               />
               <p className="text-white-800 text-2xl font-bold">Tailwind</p>
             </div>
             <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-black-600 rounded-lg transition-all duration-300">
               <img
-                src="/assets/nodejs.png"
+                src="/assets/nodeJs.png"
                 alt="nodejs"
                 className="size-32 group-hover:scale-110 transition-transform duration-300"
               />
@@ -34,7 +34,7 @@ const Skills = () => {
             </div>
             <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-black-600 rounded-lg transition-all duration-300">
               <img
-                src="/assets/mongodb.png"
+                src="/assets/MongoDB.png"
                 alt="mongodb"
                 className="size-32 group-hover:scale-110 transition-transform duration-300"
               />
@@ -42,7 +42,7 @@ const Skills = () => {
             </div>
             <div className="group flex flex-col items-center justify-center p-4 gap-4 hover:bg-black-600 rounded-lg transition-all duration-300">
               <img
-                src="/assets/expressJs.png"
+                src="/assets/expressJS.png"
                 alt="express"
                 className="size-32 group-hover:scale-110 transition-transform duration-300"
               />

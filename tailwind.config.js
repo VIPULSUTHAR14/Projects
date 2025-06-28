@@ -26,6 +26,17 @@ export default {
       backgroundImage: {
         terminal: "url('/assets/terminal.png')",
       },
+      dropShadow: {
+        'blue-100': '0 4px 4px rgba(219,234,254,0.5)',
+        'blue-200': '0 4px 4px rgba(191,219,254,0.5)',
+        'blue-300': '0 4px 4px rgba(147,197,253,0.5)',
+        'blue-400': '0 4px 4px rgba(96,165,250,0.5)',
+        'blue-500': '0 4px 4px rgba(59,130,246,0.5)',
+        'blue-600': '0 4px 4px rgba(37,99,235,0.5)',
+        'blue-700': '0 4px 4px rgba(29,78,216,0.5)',
+        'blue-800': '0 4px 4px rgba(30,64,175,0.5)',
+        'blue-900': '0 4px 4px rgba(30,58,138,0.5)',
+      },
     },
   },
   plugins: [],
