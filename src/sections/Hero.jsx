@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
       </div>
       <span>
-        <img src="public\assets\avtar2.png" alt="avtar" className=" p-24 rounded-full grayscale hover:grayscale-0 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(0,119,181,0.6)]  " />
+        <img src="/assets/avtar2.png" alt="avtar" className=" p-24 rounded-full grayscale hover:grayscale-0 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(0,119,181,0.6)]  " />
       </span>
       </div>
         br
