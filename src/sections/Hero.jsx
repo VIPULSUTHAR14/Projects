@@ -25,10 +25,10 @@ const Hero = () => {
         
         <div className="flex flex-row gap-2 justify-center items-center">
           <a href="https://github.com/VIPULSUTHAR14" target="_blank" >
-          <img src="public\assets\github.png" alt="github" className="size-16 grayscale hover:grayscale-0 hover:scale-110 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)] " />
+          <img src="/assets/github.png" alt="github" className="size-16 grayscale hover:grayscale-0 hover:scale-110 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)] " />
           </a>
           <a href="https://www.linkedin.com/in/vipul-suthar-172028333/" target="_blank" >
-          <img src="public\assets\Linked-in.png" alt="Linked-in" className="size-12 grayscale hover:grayscale-0 hover:scale-110 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(0,119,181,0.6)] " />
+          <img src="/assets/Linked-in.png" alt="Linked-in" className="size-12 grayscale hover:grayscale-0 hover:scale-110 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(0,119,181,0.6)] " />
           </a>
         </div>
       </div>
