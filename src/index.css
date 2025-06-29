@@ -60,7 +60,7 @@ body {
 
   /* button component */
   .btn {
-    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white mx-auto;
+    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-gray-800  transition-all active:scale-95 text-white mx-auto;
   }
 
   .btn-ping {
@@ -78,7 +78,7 @@ body {
 
   /* about section */
   .grid-container {
-    @apply w-full h-full border border-black-300 bg-black-200 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    @apply w-full h-full border border-black-300 bg-gray-800 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
   }
 
   .grid-headtext {
@@ -211,3 +211,5 @@ body {
     transform: rotate(0deg);
   }
 }
+
+

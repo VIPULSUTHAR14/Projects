@@ -14,7 +14,7 @@ const name = ()=>{
   
 }
   return (
-    <main className='max-w-full my-width mx-auto  ' >
+    <main className='max-w-full my-width mx-auto bg-gray-900 ' >
       <Navbar/>
       <Hero/>
       <About />
